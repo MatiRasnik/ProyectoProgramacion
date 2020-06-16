@@ -1,4 +1,4 @@
-package Libros;
+package Almacen;
 
 public class Libros {
 
