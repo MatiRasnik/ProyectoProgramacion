@@ -15,12 +15,12 @@ public class RegistroODTeatro {
 	}
 	
 	public String buscarTitulo(String titulo) {
-		Libros libro = RegistroODTeatro.get(titulo);
+		ObrasDeTeatro odt = RegistroODTeatro.get(titulo);
 		
-		if(libro  == null) {
+		if(odt  == null) {
 			System.out.println("Error");
 		}else {
-			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
+			 encontrado = odt.getTitulo() + '\n' + odt.getAutor() + '\n' + odt.getGenero() + '\n' + odt.getFecha();
 		}
 		return encontrado;
 	 
