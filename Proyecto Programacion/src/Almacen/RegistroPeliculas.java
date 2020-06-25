@@ -28,7 +28,7 @@ public class RegistroPeliculas {
 
 	}
 
-	public void eliminarLibro(String titulo) {
+	public void eliminarPeliculas(String titulo) {
 		RegistroPeliculas.remove(titulo);
 	}
 

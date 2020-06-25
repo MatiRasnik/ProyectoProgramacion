@@ -10,7 +10,7 @@ public class RegistroPinturas {
 		RegistroPinturas = new Hashtable<String, Pinturas>();
 	}
 	
-	public void agregarLibro(Pinturas pinturas) {
+	public void agregarPinturas(Pinturas pinturas) {
 		RegistroPinturas.put(pinturas.getTitulo(), pinturas);
 	}
 	
@@ -26,7 +26,7 @@ public class RegistroPinturas {
 	 
 	}
 	
-	public void eliminarLibro(String titulo) {
+	public void eliminarPinturas(String titulo) {
 		RegistroPinturas.remove(titulo);
 	} 
 	
