@@ -155,7 +155,6 @@ public class Ingresar {
 
 	if (error == false) {
 		peliculas.agregarPelicula(new Peliculas(director, genero, titulo, fecha, productora, duracion, stock));
-		
 	}
 
 	}
