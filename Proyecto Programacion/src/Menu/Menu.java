@@ -54,6 +54,7 @@ public class Menu {
 		autor = sc.nextLine();
 		System.out.print("Tema: ");
 		tema = sc.nextLine();
+		
 		System.out.print("Titulo: ");
 		titulo = sc.nextLine();
 		System.out.print("Fecha: ");
