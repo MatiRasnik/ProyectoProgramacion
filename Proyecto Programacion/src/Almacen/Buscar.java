@@ -81,7 +81,7 @@ public class Buscar {
 		String autor;
 		System.out.println("______________________");
 		System.out.println();
-		System.out.println("     Buscar: Autor    ");
+		System.out.println("     Buscar: Libro    ");
 		System.out.println("______________________");
 		System.out.println();
 		System.out.print("Autor: ");
