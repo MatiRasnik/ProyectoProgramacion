@@ -2,8 +2,10 @@ package Almacen;
 import java.util.Scanner;
 
 public class Buscar {
-	public static void Buscar() {
-		Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
+	RegistroLibros rl = new RegistroLibros();
+	
+	public void Buscar() {
 		int opcion = 0;
 		System.out.println("______________________");
 		System.out.println();
@@ -20,6 +22,7 @@ public class Buscar {
 		
 		switch(opcion) {
 		case 1:
+			buscarLibro();
 			break;
 		case 2:
 			
@@ -31,5 +34,46 @@ public class Buscar {
 			
 			break;
 		}
+	}
+	public void buscarLibro() {
+		int opcion = 0;
+		System.out.println("______________________");
+		System.out.println();
+		System.out.println("     Buscar: Libro    ");
+		System.out.println("______________________");
+		System.out.println();
+		System.out.println("1. Por Titulo");
+		System.out.println("______________________");
+		opcion = sc.nextInt();
+		
+		switch(opcion) {
+		case 1:
+			System.out.println("");
+			buscarTitulo();
+			break;
+		case 2:
+			
+			break;
+		case 3:
+			
+			break;
+		case 4:
+			
+			break;
+		}
+		
+	}
+	public void buscarTitulo() {
+		String titulo;
+		System.out.println("______________________");
+		System.out.println();
+		System.out.println("     Buscar: Libro    ");
+		System.out.println("______________________");
+		System.out.println();
+		System.out.print("Titulo: ");
+		sc = new Scanner(System.in);
+		titulo = sc.nextLine();
+		System.out.println("______________________");
+		rl.buscarTitulo(titulo);
 	}
 }
