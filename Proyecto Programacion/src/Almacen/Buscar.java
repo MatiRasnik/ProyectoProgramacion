@@ -1,4 +1,5 @@
 package Almacen;
+
 import java.util.Scanner;
 
 public class Buscar {
@@ -7,7 +8,7 @@ public class Buscar {
 	RegistroODTeatro rodt = new RegistroODTeatro();
 	RegistroPeliculas rpe = new RegistroPeliculas();
 	RegistroPinturas rpi = new RegistroPinturas();
-	
+
 	public void Buscar() {
 		int opcion = 0;
 		System.out.println("______________________");
@@ -22,8 +23,8 @@ public class Buscar {
 		System.out.println("4. Pinturas");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
-		
-		switch(opcion) {
+
+		switch (opcion) {
 		case 1:
 			buscarLibro();
 			break;
@@ -38,6 +39,7 @@ public class Buscar {
 			break;
 		}
 	}
+
 	public void buscarLibro() {
 		int opcion = 0;
 		System.out.println("______________________");
@@ -52,8 +54,8 @@ public class Buscar {
 		System.out.println("5. Por Tema");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
-		
-		switch(opcion) {
+
+		switch (opcion) {
 		case 1:
 			System.out.println("");
 			buscarTituloL();
@@ -75,8 +77,9 @@ public class Buscar {
 			buscarTemaL();
 			break;
 		}
-		
+
 	}
+
 	public void buscarTituloL() {
 		String titulo;
 		System.out.println("______________________");
@@ -90,6 +93,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rl.buscarTitulo(titulo);
 	}
+
 	public void buscarAutorL() {
 		String autor;
 		System.out.println("______________________");
@@ -103,6 +107,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rl.buscarAutor(autor);
 	}
+
 	public void buscarEditorialL() {
 		String editorial;
 		System.out.println("______________________");
@@ -116,6 +121,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rl.buscarEditorial(editorial);
 	}
+
 	public void buscarFechaL() {
 		String fecha;
 		System.out.println("______________________");
@@ -123,11 +129,13 @@ public class Buscar {
 		System.out.println("     Buscar: Libro    ");
 		System.out.println("______________________");
 		System.out.println();
-		System.out.print("Fecha: aaaa/mm/dd");
+		System.out.print("Fecha: ");
 		sc = new Scanner(System.in);
 		fecha = sc.nextLine();
 		System.out.println("______________________");
 		rl.buscarFecha(fecha);
+	}
+
 	public void buscarTemaL() {
 		String tema;
 		System.out.println("______________________");
@@ -141,6 +149,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rl.buscarTema(tema);
 	}
+
 	public void buscarODT() {
 		int opcion = 0;
 		System.out.println("______________________");
@@ -154,8 +163,8 @@ public class Buscar {
 		System.out.println("4. Por Genero");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
-		
-		switch(opcion) {
+
+		switch (opcion) {
 		case 1:
 			System.out.println("");
 			buscarTituloODT();
@@ -173,8 +182,9 @@ public class Buscar {
 			buscarGeneroODT();
 			break;
 		}
-		
+
 	}
+
 	public void buscarTituloODT() {
 		String titulo;
 		System.out.println("______________________");
@@ -188,6 +198,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rodt.buscarTitulo(titulo);
 	}
+
 	public void buscarAutorODT() {
 		String autor;
 		System.out.println("______________________");
@@ -201,6 +212,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rodt.buscarAutor(autor);
 	}
+
 	public void buscarFechaODT() {
 		String fecha;
 		System.out.println("______________________");
@@ -213,7 +225,8 @@ public class Buscar {
 		fecha = sc.nextLine();
 		System.out.println("______________________");
 		rodt.buscarFecha(fecha);
-		
+	}
+
 	public void buscarGeneroODT() {
 		String genero;
 		System.out.println("______________________");
@@ -227,6 +240,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rodt.buscarGenero(genero);
 	}
+
 	public void buscarPeliculas() {
 		int opcion = 0;
 		System.out.println("______________________");
@@ -241,8 +255,8 @@ public class Buscar {
 		System.out.println("5. Por Productora");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
-		
-		switch(opcion) {
+
+		switch (opcion) {
 		case 1:
 			System.out.println("");
 			buscarTituloPE();
@@ -261,11 +275,12 @@ public class Buscar {
 			break;
 		case 5:
 			System.out.println("");
-			buscarPropuctoraPE();
+			buscarProductoraPE();
 			break;
 		}
-		
+
 	}
+
 	public void buscarTituloPE() {
 		String titulo;
 		System.out.println("______________________");
@@ -279,6 +294,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpe.buscarTitulo(titulo);
 	}
+
 	public void buscarDirectorPE() {
 		String director;
 		System.out.println("______________________");
@@ -292,6 +308,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpe.buscarDirector(director);
 	}
+
 	public void buscarFechaPE() {
 		String fecha;
 		System.out.println("______________________");
@@ -304,6 +321,7 @@ public class Buscar {
 		fecha = sc.nextLine();
 		System.out.println("______________________");
 		rpe.buscarFecha(fecha);
+	}
 	public void buscarGeneroPE() {
 		String genero;
 		System.out.println("______________________");
@@ -317,6 +335,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpe.buscarGenero(genero);
 	}
+
 	public void buscarProductoraPE() {
 		String productora;
 		System.out.println("______________________");
@@ -328,8 +347,9 @@ public class Buscar {
 		sc = new Scanner(System.in);
 		productora = sc.nextLine();
 		System.out.println("______________________");
-		rpe.buscarProductora(genero);
+		rpe.buscarProductora(productora);
 	}
+
 	public void buscarPinturas() {
 		int opcion = 0;
 		System.out.println("______________________");
@@ -343,15 +363,15 @@ public class Buscar {
 		System.out.println("4. Por Museo");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
-		
-		switch(opcion) {
+
+		switch (opcion) {
 		case 1:
 			System.out.println("");
 			buscarTituloPI();
 			break;
 		case 2:
 			System.out.println("");
-			buscarDirectorPI();
+			buscarAutorPI();
 			break;
 		case 3:
 			System.out.println("");
@@ -359,15 +379,12 @@ public class Buscar {
 			break;
 		case 4:
 			System.out.println("");
-			buscarGeneroPI();
-			break;
-		case 5:
-			System.out.println("");
-			buscarPropuctoraPI();
+			buscarMuseoPI();
 			break;
 		}
-		
+
 	}
+
 	public void buscarTituloPI() {
 		String titulo;
 		System.out.println("______________________");
@@ -381,6 +398,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpi.buscarTitulo(titulo);
 	}
+
 	public void buscarAutorPI() {
 		String autor;
 		System.out.println("______________________");
@@ -394,6 +412,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpi.buscarAutor(autor);
 	}
+
 	public void buscarFechaPI() {
 		String fecha;
 		System.out.println("______________________");
@@ -407,6 +426,7 @@ public class Buscar {
 		System.out.println("______________________");
 		rpi.buscarFecha(fecha);
 	}
+
 	public void buscarMuseoPI() {
 		String museo;
 		System.out.println("______________________");
@@ -418,6 +438,6 @@ public class Buscar {
 		sc = new Scanner(System.in);
 		museo = sc.nextLine();
 		System.out.println("______________________");
-		rpi.buscarMuseo(genero);
+		rpi.buscarMuseo(museo);
 	}
 }
