@@ -6,25 +6,22 @@ public class Menu {
 	
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
+		Buscar b = new Buscar();
 		int opcion = 0;
 		System.out.println("______________________");
-		System.out.println();
-		System.out.println("¿Que quiere almacenar?");
+		System.out.println("        MENU          ");
 		System.out.println("______________________");
 		System.out.println();
-		System.out.println("1. Libros");
-		System.out.println("2. Obras de Teatro");
-		System.out.println("3. Peliculas");
-		System.out.println("4. Pinturas");
+		System.out.println("1. Buscar");
+		System.out.println("2. Ingresar");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
 		
 		switch(opcion) {
 		case 1:
-			NuevoLibro();
+			b.Buscar();
 			break;
 		case 2:
-			
 			break;
 		case 3:
 			
