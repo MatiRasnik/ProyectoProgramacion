@@ -10,7 +10,7 @@ public class RegistroODTeatro {
 		RegistroODTeatro = new Hashtable<String, ObrasDeTeatro>();
 	}
 	
-	public void agregarLibro(ObrasDeTeatro odt) {
+	public void agregarODTeatro(ObrasDeTeatro odt) {
 		RegistroODTeatro.put(odt.getTitulo(), odt);
 	}
 	
@@ -26,7 +26,7 @@ public class RegistroODTeatro {
 	 
 	}
 	
-	public void eliminarLibro(String titulo) {
+	public void eliminarODTeatro(String titulo) {
 		RegistroODTeatro.remove(titulo);
 	} 
 	

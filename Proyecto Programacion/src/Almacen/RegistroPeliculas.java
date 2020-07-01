@@ -11,7 +11,7 @@ public class RegistroPeliculas {
 		RegistroPeliculas = new Hashtable<String, Peliculas>();
 	}
 
-	public void agregarLibro(Peliculas peliculas) {
+	public void agregarPelicula(Peliculas peliculas) {
 		RegistroPeliculas.put(peliculas.getTitulo(), peliculas);
 	}
 
@@ -28,7 +28,7 @@ public class RegistroPeliculas {
 
 	}
 
-	public void eliminarLibro(String titulo) {
+	public void eliminarPeliculas(String titulo) {
 		RegistroPeliculas.remove(titulo);
 	}
 
