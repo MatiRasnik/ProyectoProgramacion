@@ -50,6 +50,30 @@ public class RegistroLibros {
 	 
 	}
 	
+	public String buscarFecha(String fecha) {
+		Libros libro = RegistroLibros.get(fecha);
+		
+		if(libro  == null) {
+			System.out.println("Error: Fecha no encontrada.");
+		}else {
+			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
+		}
+		return encontrado;
+	 
+	}
+	
+	public String buscarTema(String tema) {
+		Libros libro = RegistroLibros.get(tema);
+		
+		if(libro  == null) {
+			System.out.println("Error: Tema no encontrado.");
+		}else {
+			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
+		}
+		return encontrado;
+	 
+	}
+	
 	public void eliminarLibro(String titulo) {
 	RegistroLibros.remove(titulo);
 	} 

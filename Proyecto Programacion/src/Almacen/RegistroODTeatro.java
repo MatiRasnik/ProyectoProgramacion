@@ -18,7 +18,43 @@ public class RegistroODTeatro {
 		ObrasDeTeatro odt = RegistroODTeatro.get(titulo);
 		
 		if(odt  == null) {
-			System.out.println("Error");
+			System.out.println("Error: Titulo no encontrado.");
+		}else {
+			 encontrado = odt.getTitulo() + '\n' + odt.getAutor() + '\n' + odt.getGenero() + '\n' + odt.getFecha();
+		}
+		return encontrado;
+	 
+	}
+	
+	public String buscarAutor(String autor) {
+		ObrasDeTeatro odt = RegistroODTeatro.get(autor);
+		
+		if(odt  == null) {
+			System.out.println("Error: autor no encontrado.");
+		}else {
+			 encontrado = odt.getTitulo() + '\n' + odt.getAutor() + '\n' + odt.getGenero() + '\n' + odt.getFecha();
+		}
+		return encontrado;
+	 
+	}
+	
+	public String buscarFecha(String fecha) {
+		ObrasDeTeatro odt = RegistroODTeatro.get(fecha);
+		
+		if(odt  == null) {
+			System.out.println("Error: autor no encontrado.");
+		}else {
+			 encontrado = odt.getTitulo() + '\n' + odt.getAutor() + '\n' + odt.getGenero() + '\n' + odt.getFecha();
+		}
+		return encontrado;
+	 
+	}
+	
+	public String buscarGenero(String genero) {
+		ObrasDeTeatro odt = RegistroODTeatro.get(genero);
+		
+		if(odt  == null) {
+			System.out.println("Error: autor no encontrado.");
 		}else {
 			 encontrado = odt.getTitulo() + '\n' + odt.getAutor() + '\n' + odt.getGenero() + '\n' + odt.getFecha();
 		}
