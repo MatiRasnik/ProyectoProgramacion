@@ -26,6 +26,30 @@ public class RegistroLibros {
 	 
 	}
 	
+	public String buscarAutor(String autor) {
+		Libros libro = RegistroLibros.get(autor);
+		
+		if(libro  == null) {
+			System.out.println("Error: Autor no encontrado.");
+		}else {
+			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
+		}
+		return encontrado;
+	 
+	}
+	
+	public String buscarEditorial(String editorial) {
+		Libros libro = RegistroLibros.get(editorial);
+		
+		if(libro  == null) {
+			System.out.println("Error: Editorial no encontrada.");
+		}else {
+			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
+		}
+		return encontrado;
+	 
+	}
+	
 	public void eliminarLibro(String titulo) {
 	RegistroLibros.remove(titulo);
 	} 

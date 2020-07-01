@@ -70,34 +70,31 @@ public class Ingresar  {
 	}
 	
 	public static void NuevoODTeatro(){
+		RegistroODTeatro odteatro = new RegistroODTeatro();
 		
 		String autor;
-		String tema;
 		String titulo;
+		String genero;
 		String fecha;
-		String editorial;
-		int cantPaginas;
 		int stock;
 		
 		System.out.println("________________________________");
 		System.out.println();
-		System.out.println("     Nueva Obrea De Teatro:     ");
+		System.out.println("     Nueva Obra De Teatro:     ");
 		System.out.println("________________________________");
 		sc = new Scanner(System.in);
 		System.out.print("Autor: ");
 		autor = sc.nextLine();
-		System.out.print("Tema: ");
-		tema = sc.nextLine();
 		System.out.print("Titulo: ");
 		titulo = sc.nextLine();
 		System.out.print("Fecha: ");
 		fecha = sc.nextLine();
-		System.out.print("Editorial: ");
-		editorial = sc.nextLine();
-		System.out.print("Cantidad de Paginas: ");
-		cantPaginas = sc.nextInt();
+		System.out.print("Genero: ");
+		genero = sc.nextLine();
 		System.out.print("Stock: ");
 		stock = sc.nextInt();
+		
+		odteatro.agregarODTeatro(new ObrasDeTeatro(autor, genero, titulo, fecha, stock));
 		
 	}
 	

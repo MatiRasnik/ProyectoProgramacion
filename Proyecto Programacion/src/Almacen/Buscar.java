@@ -43,16 +43,17 @@ public class Buscar {
 		System.out.println("______________________");
 		System.out.println();
 		System.out.println("1. Por Titulo");
+		System.out.println("2. Por Autor");
+		System.out.println("3. Por Editorial");
 		System.out.println("______________________");
 		opcion = sc.nextInt();
 		
 		switch(opcion) {
 		case 1:
-			System.out.println("");
 			buscarTitulo();
 			break;
 		case 2:
-			
+			buscarAutor();
 			break;
 		case 3:
 			
@@ -75,5 +76,18 @@ public class Buscar {
 		titulo = sc.nextLine();
 		System.out.println("______________________");
 		rl.buscarTitulo(titulo);
+	}
+	public void buscarAutor() {
+		String autor;
+		System.out.println("______________________");
+		System.out.println();
+		System.out.println("     Buscar: Autor    ");
+		System.out.println("______________________");
+		System.out.println();
+		System.out.print("Autor: ");
+		sc = new Scanner(System.in);
+		autor = sc.nextLine();
+		System.out.println("______________________");
+		rl.buscarAutor(autor);
 	}
 }

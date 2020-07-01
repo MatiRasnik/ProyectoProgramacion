@@ -7,6 +7,7 @@ public class Menu {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		Buscar b = new Buscar();
+		Ingresar i = new Ingresar();
 		int opcion = 0;
 		System.out.println("______________________");
 		System.out.println("        MENU          ");
@@ -22,6 +23,7 @@ public class Menu {
 			b.Buscar();
 			break;
 		case 2:
+			i.Ingresar();
 			break;
 		case 3:
 			
