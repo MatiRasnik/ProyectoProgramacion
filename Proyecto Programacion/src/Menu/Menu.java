@@ -8,32 +8,30 @@ public class Menu {
 	public static void main(String[] args) {
 		Buscar b = new Buscar();
 		Ingresar i = new Ingresar();
-		int opcion = 0;
-		System.out.println("______________________");
-		System.out.println("        MENU          ");
-		System.out.println("______________________");
-		System.out.println();
-		System.out.println("1. Buscar");
-		System.out.println("2. Ingresar");
-		System.out.println("______________________");
-		opcion = sc.nextInt();
-		
-		switch(opcion) {
-		case 1:
-			b.Buscar();
-			break;
-		case 2:
-			i.Ingresar();
-			break;
-		case 3:
+		boolean repetir = true;
+		do {
+			int opcion = 0;
+			System.out.println("______________________");
+			System.out.println("        MENU          ");
+			System.out.println("______________________");
+			System.out.println();
+			System.out.println("1. Buscar");
+			System.out.println("2. Ingresar");
+			System.out.println("3. Salir");
+			System.out.println("______________________");
+			opcion = sc.nextInt();
 			
-			break;
-		case 4:
-			
-			break;
-		}
-//menu
-
+			switch(opcion) {
+			case 1:
+				b.Buscar();
+				break;
+			case 2:
+				i.Ingresar();
+				break;
+			case 3:
+				repetir = false;
+			}
+		}while(repetir); 
 	}
 	public static void NuevoLibro(){
 		String autor;
