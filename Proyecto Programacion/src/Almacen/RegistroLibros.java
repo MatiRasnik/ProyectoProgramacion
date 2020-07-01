@@ -18,7 +18,7 @@ public class RegistroLibros {
 		Libros libro = RegistroLibros.get(titulo);
 		
 		if(libro  == null) {
-			System.out.println("Error");
+			System.out.println("Error: Libro no encontrado.");
 		}else {
 			 encontrado = libro.getTitulo() + '\n' + libro.getAutor() + '\n' + libro.getTema() + '\n' + libro.getFecha() + '\n' + libro.getEditorial() + '\n' + libro.getPaginas();
 		}
