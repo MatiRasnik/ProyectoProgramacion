@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ingresar {
 	static Scanner sc = new Scanner(System.in);
 
-	public Ingresar() {
+	public void Ingresar() {
 
 		int opcion = 0;
 		System.out.println("______________________");
